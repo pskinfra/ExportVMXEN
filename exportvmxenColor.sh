@@ -41,7 +41,7 @@ OK=`echo -e "\033[01;32m [ OK ]  \033[0m"`
 NOK=`echo -e "\033[01;31m [ PROBLEMA ] \033[0m"`
 
 
-mount -t cifs -o username=administrator,password=s3nh@f0rt3 '\\192.168.50.5\pscsrj\vm' /mnt/vms/
+mount -t cifs -o username=USER,password=PASS 'DIRECTORY SRC' DIRETOCTY DST
 if [ $? -eq 0 ]; then
 echo -e "1) Montagem de destino de vm: ${vmname}, em: ${dhvm} ${OK}"  >> $log
 else
